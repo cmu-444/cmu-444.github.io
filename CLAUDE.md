@@ -6,7 +6,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 The public course website for CMU 17-444, "Production Machine Learning Systems for Software Engineers" (CMU Qatar, first offered Spring 2027). It's a static **MkDocs** + **Material for MkDocs** site. There's no application code: content is Markdown plus YAML data rendered through Jinja. It was bootstrapped from the 17-313 site, and the 17-313 content was removed. The site is intentionally bare-bones (Home with This Week + tentative weekly schedule, and Course Overview). It deliberately keeps the 17-313 look and homepage layout (the original source is at `~/Dropbox/cmu-se/f26/CMU-17313Q.github.io`); keep new work consistent with it. The syllabus, assignments, project, and labs are still to come; placeholders are commented out in `mkdocs.yml` `nav`.
 
-The GitHub remote is `cmu-prodml/cmu-444.github.io`, so it publishes as a *project* site under the `/cmu-444.github.io/` subpath (see `site_url`). Use **relative** links and image paths (`assets/images/...`). Root-absolute `/assets/...` paths break.
+The GitHub repo is `cmu-444/cmu-444.github.io` (moved from `cmu-prodml`), so it publishes as an organization site at the root, https://cmu-444.github.io/ (see `site_url`). Still prefer **relative** links and image paths (`assets/images/...`) so the site also works from `mkdocs serve`, previews, or a future move.
 
 ## Commands
 

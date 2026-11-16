@@ -1,5 +1,5 @@
 site_name: "CMU 17-444: Production Machine Learning Systems for Software Engineers"
-site_url: https://cmu-prodml.github.io/cmu-444.github.io/
+site_url: https://cmu-444.github.io/
 
 theme:
   name: material
