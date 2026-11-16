@@ -771,7 +771,7 @@
   homework:
     deadline: ''
     link: ''
-    name: M1 due
+    name: ''
     numDays: 1
   lab:
     handout: ''
@@ -911,7 +911,7 @@
   homework:
     deadline: ''
     link: ''
-    name: M2 infrastructure checkpoint
+    name: ''
     numDays: 1
   lab:
     handout: ''
@@ -1275,7 +1275,7 @@
   homework:
     deadline: ''
     link: ''
-    name: Monitoring instrumentation and first read-only agent tool
+    name: ''
     numDays: 1
   lab:
     handout: ''
@@ -1331,7 +1331,7 @@
   homework:
     deadline: ''
     link: ''
-    name: M2 due
+    name: ''
     numDays: 1
   lab:
     handout: ''
@@ -1415,7 +1415,7 @@
   homework:
     deadline: ''
     link: ''
-    name: M4 specification released
+    name: ''
     numDays: 1
   lab:
     handout: ''
@@ -1471,7 +1471,7 @@
   homework:
     deadline: ''
     link: ''
-    name: M3 monitoring and tool interfaces in progress
+    name: ''
     numDays: 1
   lab:
     handout: ''
@@ -1555,7 +1555,7 @@
   homework:
     deadline: ''
     link: ''
-    name: Agent tool integration checkpoint
+    name: ''
     numDays: 1
   lab:
     handout: ''
@@ -1611,7 +1611,7 @@
   homework:
     deadline: ''
     link: ''
-    name: M3 due
+    name: ''
     numDays: 1
   lab:
     handout: ''
@@ -1751,7 +1751,7 @@
   homework:
     deadline: ''
     link: ''
-    name: M4 integration checkpoint
+    name: ''
     numDays: 1
   lab:
     handout: ''
@@ -1835,7 +1835,7 @@
   homework:
     deadline: ''
     link: ''
-    name: M4 evaluation draft
+    name: ''
     numDays: 1
   lab:
     handout: ''
@@ -1891,7 +1891,7 @@
   homework:
     deadline: ''
     link: ''
-    name: M4 final preparation
+    name: ''
     numDays: 1
   lab:
     handout: ''
@@ -1975,7 +1975,7 @@
   homework:
     deadline: ''
     link: ''
-    name: M4 due
+    name: ''
     numDays: 1
   lab:
     handout: ''
