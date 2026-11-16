@@ -1,0 +1,1805 @@
+# Spring 2027 tentative schedule, one entry per class weekday (Sun-Thu).
+# Generated from resources/S27 Course Schedule CSV; edit by hand from now on.
+# type: Lecture | Lab | Exam | No class (blank on non-meeting days)
+# homework = individual assignments (I*) and project milestones (M*); problemset = problem sets / quizzes
+# reading = pre-lecture reading for that day's lecture
+
+- date: Sun Jan 10
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: Introduction and Motivation
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Mon Jan 11
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Jan 12
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: 'Stream processing: Apache Kafka'
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lab
+
+- date: Wed Jan 13
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Jan 14
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Sun Jan 17
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: Correctness and Risk + Requirements
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Mon Jan 18
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Jan 19
+  homework:
+    deadline: ''
+    link: ''
+    name: 'I1: Recommendation Model'
+    numDays: 1
+  lecture:
+    link: ''
+    name: Planning for Mistakes
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Wed Jan 20
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Jan 21
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Sun Jan 24
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: Model Quality
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Mon Jan 25
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Jan 26
+  homework:
+    deadline: ''
+    link: ''
+    name: 'I2: Risk'
+    numDays: 1
+  lecture:
+    link: ''
+    name: Behavioral Model Testing
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Wed Jan 27
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Jan 28
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Sun Jan 31
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: Model Testing
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lab
+
+- date: Mon Feb 1
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Feb 2
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: Deploying a Model
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Wed Feb 3
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Feb 4
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Sun Feb 7
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: Automating and Testing ML Pipelines
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Mon Feb 8
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Feb 9
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: No Class
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: No class
+
+- date: Wed Feb 10
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Feb 11
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Sun Feb 14
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: Continuous Integration
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lab
+
+- date: Mon Feb 15
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Feb 16
+  homework:
+    deadline: ''
+    link: ''
+    name: M1
+    numDays: 1
+  lecture:
+    link: ''
+    name: Data Quality
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Wed Feb 17
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Feb 18
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Sun Feb 21
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: Scaling the System
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Mon Feb 22
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Feb 23
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: Planning for Operations + Versioning and Provenance
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Wed Feb 24
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Feb 25
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Sun Feb 28
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ML Pipeline Testing
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lab
+
+- date: Mon Mar 1
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Mar 2
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: Exam 1
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Exam
+
+- date: Wed Mar 3
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Mar 4
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Sun Mar 7
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: No Class
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: No class
+
+- date: Mon Mar 8
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Mar 9
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: No Class
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: No class
+
+- date: Wed Mar 10
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Mar 11
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Sun Mar 14
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: 'Monitoring: Prometheus and Grafana'
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lab
+
+- date: Mon Mar 15
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Mar 16
+  homework:
+    deadline: ''
+    link: ''
+    name: M2 infrastructure checkpoint
+    numDays: 1
+  lecture:
+    link: ''
+    name: Safety
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Wed Mar 17
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Mar 18
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Sun Mar 21
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: Coding Agents and Agent Harnesses
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Mon Mar 22
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Mar 23
+  homework:
+    deadline: ''
+    link: ''
+    name: M2
+    numDays: 1
+  lecture:
+    link: ''
+    name: Agent Evaluation and Reliability
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Wed Mar 24
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Mar 25
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Sun Mar 28
+  homework:
+    deadline: ''
+    link: ''
+    name: Agent tool integration checkpoint
+    numDays: 1
+  lecture:
+    link: ''
+    name: Agents and MCP
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lab
+
+- date: Mon Mar 29
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Mar 30
+  homework:
+    deadline: ''
+    link: ''
+    name: 'I3: Agent Security'
+    numDays: 1
+  lecture:
+    link: ''
+    name: Explainability + Transparency
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Wed Mar 31
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Apr 1
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Sun Apr 4
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: No Class
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: No class
+
+- date: Mon Apr 5
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Apr 6
+  homework:
+    deadline: ''
+    link: ''
+    name: M4 integration checkpoint
+    numDays: 1
+  lecture:
+    link: ''
+    name: Operations Agent Integration and Reliability
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Wed Apr 7
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Apr 8
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Sun Apr 11
+  homework:
+    deadline: ''
+    link: ''
+    name: M4 evaluation draft
+    numDays: 1
+  lecture:
+    link: ''
+    name: Operations Agent Case Study and Evaluation Workshop
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Mon Apr 12
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Apr 13
+  homework:
+    deadline: ''
+    link: ''
+    name: 'M3: Monitoring and CD'
+    numDays: 1
+  lecture:
+    link: ''
+    name: Accountability, Fairness, and Feedback Loops
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lecture
+
+- date: Wed Apr 14
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Apr 15
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Sun Apr 18
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: Operations Agent Evaluation and Security
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Lab
+
+- date: Mon Apr 19
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Tue Apr 20
+  homework:
+    deadline: ''
+    link: ''
+    name: M4
+    numDays: 1
+  lecture:
+    link: ''
+    name: Exam 2
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: Exam
+
+- date: Wed Apr 21
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''
+
+- date: Thu Apr 22
+  homework:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  lecture:
+    link: ''
+    name: ''
+  problemset:
+    deadline: ''
+    link: ''
+    name: ''
+    numDays: 0
+  reading:
+    link: ''
+    name: ''
+  recitation:
+    handout: ''
+    name: ''
+    quiz: ''
+    slides: ''
+  type: ''

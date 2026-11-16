@@ -1,0 +1,69 @@
+site_name: "CMU 17-444: Production Machine Learning Systems for Software Engineers"
+site_url: https://cmu-prodml.github.io/cmu-444.github.io/
+
+theme:
+  name: material
+  custom_dir: overrides
+  logo: assets/images/17444_logo_white.png
+  favicon: assets/favicon.ico
+  font:
+    text: Roboto
+  palette:
+    - scheme: default
+      primary: red
+      accent: red
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: red
+      accent: red
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.top
+    - navigation.tracking
+    - navigation.indexes
+    - announce.dismiss
+
+markdown_extensions:
+  - attr_list
+  - admonition
+  - md_in_html
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      clickable_checkbox: true
+      custom_checkbox: true
+  - pymdownx.tilde
+  - tables
+  - toc:
+      title: On This Page
+      toc_depth: 3
+      permalink: true
+
+extra_css:
+  - stylesheets/custom.css
+
+plugins:
+  - search
+  - markdownextradata
+
+nav:
+  - Home: index.md
+  - Course Overview: overview.md
+  # To add as the course is finalized:
+  # - Syllabus: syllabus.md
+  # - Assignments: assignments/index.md
+  # - Project: project/index.md
+  # - Labs: labs/index.md
+  # - Recitations: recitations/index.md

@@ -1,0 +1,21 @@
+name: Deploy Website 
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch: # Can be invoked manually from the UI
+  workflow_call:     # Can be invoked from other workflows
+permissions:
+  contents: write
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          ref: 'main' # Force getting the latest
+      - uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+      - run: pip install -r requirements.txt
+      - run: mkdocs gh-deploy --force
