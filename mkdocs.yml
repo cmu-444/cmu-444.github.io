@@ -62,7 +62,7 @@ nav:
   - Home: index.md
   - Course Overview: overview.md
   # To add as the course is finalized:
-  # - Syllabus: syllabus.md
+  - Syllabus: syllabus.md
   # - Assignments: assignments/index.md
   # - Project: project/index.md
   # - Labs: labs/index.md
