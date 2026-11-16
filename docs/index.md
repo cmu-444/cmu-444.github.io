@@ -282,20 +282,26 @@ hide:
                 {% endif %}
             {% endif %}
 
-            {% if schedule_day.homework.name != "" %}
-                <td rowspan="{{schedule_day.homework.numDays}}"><span class="schedule-homework">
-                    <b>{{schedule_day.homework.name}}</b>
+            {%- set has_assignment = schedule_day.assignment and schedule_day.assignment.name != "" -%}
+            {% if schedule_day.homework.name != "" or has_assignment %}
+                <td rowspan="{{ schedule_day.homework.numDays if schedule_day.homework.name != '' else 1 }}"><span class="schedule-homework">
+                    {% for item in [schedule_day.assignment, schedule_day.homework] if item and item.name != "" %}
+                    <b>{{item.name}}</b>
                     <br/>
-                    {{schedule_day.homework.deadline}}
+                    {% if item.deadline != "" %}
+                    {{item.deadline}}
                     <br/>
+                    {% endif %}
 
-                    {% if schedule_day.homework.link != "" %}
-                    <a class="label label-red" href="{{schedule_day.homework.link}}">
+                    {% if item.link != "" %}
+                    <a class="label label-red" href="{{item.link}}" target="_blank">
                         <span class="material-symbols-outlined">description</span>Handout
                     </a>
                     {% endif %}
+                    {% if not loop.last %}<br/><br/>{% endif %}
+                    {% endfor %}
                 </span></td>
-                {% set ns.homework_days_left = schedule_day.homework.numDays - 1 %}
+                {% set ns.homework_days_left = (schedule_day.homework.numDays if schedule_day.homework.name != '' else 1) - 1 %}
             {% else %}
                 {% if ns.homework_days_left > 0 %}
                     {% set ns.homework_days_left = ns.homework_days_left - 1 %}

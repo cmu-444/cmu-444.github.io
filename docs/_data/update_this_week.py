@@ -55,6 +55,12 @@ if schedule:
             # We left the current week
             break
 
+        assignment = schedule_day.get('assignment')
+        if assignment and assignment['name'] != '':
+            projects.append(assignment)
+            projects[-1]['date'] = schedule_day['date']
+            projects[-1]['end_date'] = add_business_days(schedule_day['date'], assignment['numDays'], current_date.year)
+
         if schedule_day['homework']['name'] != '':
             projects.append(schedule_day['homework'])
             projects[-1]['date'] = schedule_day['date']
