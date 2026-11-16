@@ -1,5 +1,5 @@
 # Spring 2027 tentative schedule, one entry per class weekday (Sun-Thu).
-# Generated from resources/S27 Course Schedule CSV (milestones from v2); edit by hand from now on.
+# Generated from resources/S27 Course Schedule CSV (assignments and milestones from v1); edit by hand from now on.
 # type: Lecture | Lab | Exam | No class (blank on non-meeting days)
 # lab = lab session (name, slides, handout); lecture is empty on lab days
 # assignment = individual assignments (I*); homework = project milestones (M*); both show under "Assignments & Project"
@@ -15,7 +15,7 @@
   homework:
     deadline: ''
     link: ''
-    name: M0 released
+    name: ''
     numDays: 1
   lab:
     handout: ''
@@ -204,14 +204,14 @@
 
 - assignment:
     deadline: ''
-    link: https://github.com/mlip-cmu/f2026/blob/main/assignments/I2_model.md
+    link: 'https://github.com/mlip-cmu/f2026/blob/main/assignments/I2_model.md'
     name: 'I1: Recommendation Model'
     numDays: 1
   date: Tue Jan 19
   homework:
     deadline: ''
     link: ''
-    name: M0 due
+    name: ''
     numDays: 1
   lab:
     handout: ''
@@ -344,9 +344,9 @@
 
 - assignment:
     deadline: ''
-    link: ''
-    name: ''
-    numDays: 0
+    link: 'https://github.com/mlip-cmu/f2026/blob/main/assignments/I3_risk.md'
+    name: 'I2: Risk'
+    numDays: 1
   date: Tue Jan 26
   homework:
     deadline: ''
@@ -770,8 +770,8 @@
   date: Tue Feb 16
   homework:
     deadline: ''
-    link: ''
-    name: ''
+    link: 'https://github.com/mlip-cmu/f2026/blob/main/assignments/project.md'
+    name: M1
     numDays: 1
   lab:
     handout: ''
@@ -1470,8 +1470,8 @@
   date: Tue Mar 23
   homework:
     deadline: ''
-    link: ''
-    name: ''
+    link: 'https://github.com/mlip-cmu/f2026/blob/main/assignments/project.md'
+    name: M2
     numDays: 1
   lab:
     handout: ''
