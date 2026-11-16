@@ -38,7 +38,7 @@ start_date = today - timedelta(todays_weekday)
 
 projects = []
 problemsets = []
-recitation = None
+lab = None
 lectures = []
 
 if schedule:
@@ -74,9 +74,9 @@ if schedule:
                 if schedule_day['reading']['name'] != '':
                     lectures[-1]['reading'] = schedule_day['reading']
 
-            if schedule_day['recitation']['name'] != '':
-                recitation = schedule_day['recitation']
-                recitation['date'] = schedule_day['date']
+            if schedule_day['lab']['name'] != '':
+                lab = schedule_day['lab']
+                lab['date'] = schedule_day['date']
 
 projects = list(filter(lambda project: project['end_date'] > today, projects))
 problemsets = list(filter(lambda problemset: problemset['end_date'] > today, problemsets))
@@ -123,7 +123,7 @@ today = datetime.now()
 output = {
     "projects": projects,
     "problemsets": problemsets,
-    "recitation": recitation,
+    "lab": lab,
     "lectures": lectures,
     "teamsurvey" : (teamsurvey if teamsurvey != None else nextteamsurvey)
 }

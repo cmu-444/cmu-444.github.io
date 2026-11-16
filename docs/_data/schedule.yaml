@@ -1,6 +1,7 @@
 # Spring 2027 tentative schedule, one entry per class weekday (Sun-Thu).
 # Generated from resources/S27 Course Schedule CSV; edit by hand from now on.
 # type: Lecture | Lab | Exam | No class (blank on non-meeting days)
+# lab = lab session (name, slides, handout); lecture is empty on lab days
 # homework = individual assignments (I*) and project milestones (M*); problemset = problem sets / quizzes
 # reading = pre-lecture reading for that day's lecture
 
@@ -10,6 +11,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Introduction and Motivation
@@ -21,11 +26,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Mon Jan 11
@@ -34,6 +34,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -45,11 +49,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Jan 12
@@ -58,9 +57,13 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: 'Stream processing: Apache Kafka'
+    slides: ''
   lecture:
     link: ''
-    name: 'Stream processing: Apache Kafka'
+    name: ''
   problemset:
     deadline: ''
     link: ''
@@ -69,11 +72,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lab
 
 - date: Wed Jan 13
@@ -82,6 +80,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -93,11 +95,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Jan 14
@@ -106,6 +103,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -117,11 +118,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Sun Jan 17
@@ -130,6 +126,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Correctness and Risk + Requirements
@@ -141,11 +141,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Mon Jan 18
@@ -154,6 +149,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -165,11 +164,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Jan 19
@@ -178,6 +172,10 @@
     link: ''
     name: 'I1: Recommendation Model'
     numDays: 1
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Planning for Mistakes
@@ -189,11 +187,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Wed Jan 20
@@ -202,6 +195,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -213,11 +210,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Jan 21
@@ -226,6 +218,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -237,11 +233,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Sun Jan 24
@@ -250,6 +241,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Model Quality
@@ -261,11 +256,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Mon Jan 25
@@ -274,6 +264,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -285,11 +279,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Jan 26
@@ -298,6 +287,10 @@
     link: ''
     name: 'I2: Risk'
     numDays: 1
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Behavioral Model Testing
@@ -309,11 +302,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Wed Jan 27
@@ -322,6 +310,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -333,11 +325,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Jan 28
@@ -346,6 +333,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -357,11 +348,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Sun Jan 31
@@ -370,9 +356,13 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: Model Testing
+    slides: ''
   lecture:
     link: ''
-    name: Model Testing
+    name: ''
   problemset:
     deadline: ''
     link: ''
@@ -381,11 +371,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lab
 
 - date: Mon Feb 1
@@ -394,6 +379,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -405,11 +394,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Feb 2
@@ -418,6 +402,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Deploying a Model
@@ -429,11 +417,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Wed Feb 3
@@ -442,6 +425,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -453,11 +440,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Feb 4
@@ -466,6 +448,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -477,11 +463,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Sun Feb 7
@@ -490,6 +471,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Automating and Testing ML Pipelines
@@ -501,11 +486,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Mon Feb 8
@@ -514,6 +494,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -525,11 +509,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Feb 9
@@ -538,6 +517,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: No Class
@@ -549,11 +532,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: No class
 
 - date: Wed Feb 10
@@ -562,6 +540,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -573,11 +555,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Feb 11
@@ -586,6 +563,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -597,11 +578,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Sun Feb 14
@@ -610,9 +586,13 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: Continuous Integration
+    slides: ''
   lecture:
     link: ''
-    name: Continuous Integration
+    name: ''
   problemset:
     deadline: ''
     link: ''
@@ -621,11 +601,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lab
 
 - date: Mon Feb 15
@@ -634,6 +609,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -645,11 +624,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Feb 16
@@ -658,6 +632,10 @@
     link: ''
     name: M1
     numDays: 1
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Data Quality
@@ -669,11 +647,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Wed Feb 17
@@ -682,6 +655,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -693,11 +670,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Feb 18
@@ -706,6 +678,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -717,11 +693,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Sun Feb 21
@@ -730,6 +701,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Scaling the System
@@ -741,11 +716,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Mon Feb 22
@@ -754,6 +724,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -765,11 +739,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Feb 23
@@ -778,6 +747,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Planning for Operations + Versioning and Provenance
@@ -789,11 +762,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Wed Feb 24
@@ -802,6 +770,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -813,11 +785,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Feb 25
@@ -826,6 +793,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -837,11 +808,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Sun Feb 28
@@ -850,9 +816,13 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ML Pipeline Testing
+    slides: ''
   lecture:
     link: ''
-    name: ML Pipeline Testing
+    name: ''
   problemset:
     deadline: ''
     link: ''
@@ -861,11 +831,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lab
 
 - date: Mon Mar 1
@@ -874,6 +839,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -885,11 +854,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Mar 2
@@ -898,6 +862,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Exam 1
@@ -909,11 +877,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Exam
 
 - date: Wed Mar 3
@@ -922,6 +885,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -933,11 +900,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Mar 4
@@ -946,6 +908,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -957,11 +923,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Sun Mar 7
@@ -970,6 +931,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: No Class
@@ -981,11 +946,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: No class
 
 - date: Mon Mar 8
@@ -994,6 +954,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1005,11 +969,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Mar 9
@@ -1018,6 +977,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: No Class
@@ -1029,11 +992,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: No class
 
 - date: Wed Mar 10
@@ -1042,6 +1000,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1053,11 +1015,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Mar 11
@@ -1066,6 +1023,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1077,11 +1038,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Sun Mar 14
@@ -1090,9 +1046,13 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: 'Monitoring: Prometheus and Grafana'
+    slides: ''
   lecture:
     link: ''
-    name: 'Monitoring: Prometheus and Grafana'
+    name: ''
   problemset:
     deadline: ''
     link: ''
@@ -1101,11 +1061,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lab
 
 - date: Mon Mar 15
@@ -1114,6 +1069,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1125,11 +1084,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Mar 16
@@ -1138,6 +1092,10 @@
     link: ''
     name: M2 infrastructure checkpoint
     numDays: 1
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Safety
@@ -1149,11 +1107,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Wed Mar 17
@@ -1162,6 +1115,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1173,11 +1130,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Mar 18
@@ -1186,6 +1138,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1197,11 +1153,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Sun Mar 21
@@ -1210,6 +1161,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Coding Agents and Agent Harnesses
@@ -1221,11 +1176,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Mon Mar 22
@@ -1234,6 +1184,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1245,11 +1199,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Mar 23
@@ -1258,6 +1207,10 @@
     link: ''
     name: M2
     numDays: 1
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Agent Evaluation and Reliability
@@ -1269,11 +1222,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Wed Mar 24
@@ -1282,6 +1230,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1293,11 +1245,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Mar 25
@@ -1306,6 +1253,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1317,11 +1268,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Sun Mar 28
@@ -1330,9 +1276,13 @@
     link: ''
     name: Agent tool integration checkpoint
     numDays: 1
+  lab:
+    handout: ''
+    name: Agents and MCP
+    slides: ''
   lecture:
     link: ''
-    name: Agents and MCP
+    name: ''
   problemset:
     deadline: ''
     link: ''
@@ -1341,11 +1291,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lab
 
 - date: Mon Mar 29
@@ -1354,6 +1299,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1365,11 +1314,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Mar 30
@@ -1378,6 +1322,10 @@
     link: ''
     name: 'I3: Agent Security'
     numDays: 1
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Explainability + Transparency
@@ -1389,11 +1337,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Wed Mar 31
@@ -1402,6 +1345,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1413,11 +1360,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Apr 1
@@ -1426,6 +1368,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1437,11 +1383,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Sun Apr 4
@@ -1450,6 +1391,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: No Class
@@ -1461,11 +1406,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: No class
 
 - date: Mon Apr 5
@@ -1474,6 +1414,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1485,11 +1429,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Apr 6
@@ -1498,6 +1437,10 @@
     link: ''
     name: M4 integration checkpoint
     numDays: 1
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Operations Agent Integration and Reliability
@@ -1509,11 +1452,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Wed Apr 7
@@ -1522,6 +1460,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1533,11 +1475,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Apr 8
@@ -1546,6 +1483,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1557,11 +1498,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Sun Apr 11
@@ -1570,6 +1506,10 @@
     link: ''
     name: M4 evaluation draft
     numDays: 1
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Operations Agent Case Study and Evaluation Workshop
@@ -1581,11 +1521,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Mon Apr 12
@@ -1594,6 +1529,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1605,11 +1544,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Apr 13
@@ -1618,6 +1552,10 @@
     link: ''
     name: 'M3: Monitoring and CD'
     numDays: 1
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Accountability, Fairness, and Feedback Loops
@@ -1629,11 +1567,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lecture
 
 - date: Wed Apr 14
@@ -1642,6 +1575,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1653,11 +1590,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Apr 15
@@ -1666,6 +1598,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1677,11 +1613,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Sun Apr 18
@@ -1690,9 +1621,13 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: Operations Agent Evaluation and Security
+    slides: ''
   lecture:
     link: ''
-    name: Operations Agent Evaluation and Security
+    name: ''
   problemset:
     deadline: ''
     link: ''
@@ -1701,11 +1636,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Lab
 
 - date: Mon Apr 19
@@ -1714,6 +1644,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1725,11 +1659,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Tue Apr 20
@@ -1738,6 +1667,10 @@
     link: ''
     name: M4
     numDays: 1
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: Exam 2
@@ -1749,11 +1682,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: Exam
 
 - date: Wed Apr 21
@@ -1762,6 +1690,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1773,11 +1705,6 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''
 
 - date: Thu Apr 22
@@ -1786,6 +1713,10 @@
     link: ''
     name: ''
     numDays: 0
+  lab:
+    handout: ''
+    name: ''
+    slides: ''
   lecture:
     link: ''
     name: ''
@@ -1797,9 +1728,4 @@
   reading:
     link: ''
     name: ''
-  recitation:
-    handout: ''
-    name: ''
-    quiz: ''
-    slides: ''
   type: ''

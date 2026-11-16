@@ -27,7 +27,7 @@ hide:
         {% if this_week.lectures %}
             {% for lecture in this_week.lectures %}
                 <div class="lecture-name">
-                    {% if lecture.type == "Lab" %}Lab: {% endif %}{{ lecture.name }}
+                    {{ lecture.name }}
                 </div>
                 <div class="lecture-date">
                     <span class="material-symbols-outlined">calendar_month</span>
@@ -60,29 +60,27 @@ hide:
 
 <div class="card">
     <div class="header">
-        Recitation
+        Lab
     </div>
     <div class="content">
-        {% if this_week.recitation %}
+        {% if this_week.lab %}
             <div class="recitation-name">
-                {{ this_week.recitation.name }}
+                {{ this_week.lab.name }}
+            </div>
+            <div class="lecture-date">
+                <span class="material-symbols-outlined">calendar_month</span>
+                {{ this_week.lab.date }}
             </div>
 
-            {% if this_week.recitation.slides != "" %}
-            <a class="label label-aqua" href="{{this_week.recitation.slides}}" target="_blank">
+            {% if this_week.lab.slides != "" %}
+            <a class="label label-aqua" href="{{this_week.lab.slides}}" target="_blank">
                 <span class="material-symbols-outlined">slideshow</span>Slides
             </a>
             {% endif %}
 
-            {% if this_week.recitation.handout != "" %}
-            <a class="label label-aqua" href="{{this_week.recitation.handout}}">
+            {% if this_week.lab.handout != "" %}
+            <a class="label label-aqua" href="{{this_week.lab.handout}}">
                 <span class="material-symbols-outlined">description</span>Handout
-            </a>
-            {% endif %}
-
-            {% if this_week.recitation.quiz != "" %}
-            <a class="label label-aqua" href="{{this_week.recitation.quiz}}" target="_blank">
-                <span class="material-symbols-outlined">equalizer</span>Quiz
             </a>
             {% endif %}
         {% else %}
@@ -208,14 +206,14 @@ hide:
 {%- set schedule = extra.schedule -%}
 
 {% if schedule %}
-{% set ns = namespace(recitation_days_left=0, homework_days_left=0, problemset_days_left=0) %}
+{% set ns = namespace(homework_days_left=0, problemset_days_left=0) %}
 
 <table>
     <thead>
         <th><b>Date</b></th>
         <th><b>Lecture</b></th>
         <th><b>Pre-lecture Reading</b></th>
-        <th><b>Recitation</b></th>
+        <th><b>Lab</b></th>
         <th><b>Problem Sets / Quiz</b></th>
         <th><b>Assignments & Project</b></th>
     </thead>
@@ -227,10 +225,10 @@ hide:
             <td><span class="schedule-lecture">
                 {% if schedule_day.lecture.name != "" and schedule_day.lecture.link != "" %}
                     <a class="label label-gold" href="{{schedule_day.lecture.link}}" target="_blank">
-                        {% if schedule_day.type == "Lab" %}Lab: {% endif %}{{schedule_day.lecture.name}}
+                        {{schedule_day.lecture.name}}
                     </a>
                 {% elif schedule_day.lecture.name != "" %}
-                    <b>{% if schedule_day.type == "Lab" %}Lab: {% endif %}{{schedule_day.lecture.name}}</b>
+                    <b>{{schedule_day.lecture.name}}</b>
                 {% endif %}
             </span></td>
 
@@ -242,37 +240,24 @@ hide:
                 {% endif %}
             </span></td>
 
-            {% if schedule_day.recitation.name != "" %}
-                <td rowspan="1"><span class="schedule-recitation">
-                    <b>{{schedule_day.recitation.name}}</b>
+            <td><span class="schedule-recitation">
+                {% if schedule_day.lab.name != "" %}
+                    <b>{{schedule_day.lab.name}}</b>
                     <br/>
 
-                    {% if schedule_day.recitation.slides != "" %}
-                    <a class="label label-aqua" href="{{schedule_day.recitation.slides}}" target="_blank">
+                    {% if schedule_day.lab.slides != "" %}
+                    <a class="label label-aqua" href="{{schedule_day.lab.slides}}" target="_blank">
                         <span class="material-symbols-outlined">slideshow</span>Slides
                     </a>
                     {% endif %}
 
-                    {% if schedule_day.recitation.handout != "" %}
-                    <a class="label label-aqua" href="{{schedule_day.recitation.handout}}">
+                    {% if schedule_day.lab.handout != "" %}
+                    <a class="label label-aqua" href="{{schedule_day.lab.handout}}">
                         <span class="material-symbols-outlined">description</span>Handout
                     </a>
                     {% endif %}
-
-                    {% if schedule_day.recitation.quiz != "" %}
-                    <a class="label label-aqua" href="{{schedule_day.recitation.quiz}}" target="_blank">
-                        <span class="material-symbols-outlined">equalizer</span>Quiz
-                    </a>
-                    {% endif %}
-                </span></td>
-                {% set ns.recitation_days_left = 0 %}
-            {% else %}
-                {% if ns.recitation_days_left > 0 %}
-                    {% set ns.recitation_days_left = ns.recitation_days_left - 1 %}
-                {% else %}
-                    <td><span class="schedule-recitation"></span></td>
                 {% endif %}
-            {% endif %}
+            </span></td>
 
 
             {% if schedule_day.problemset.name != "" %}
