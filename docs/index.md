@@ -339,7 +339,7 @@ Coming Soon!
                 <a href="mailto:{{instructor.email}}"><span class="material-symbols-outlined">
                     mail
                 </span></a><br />
-		Office hours <a href="https://calendar.app.google/BcUUbyXDAzcw8xCZ7" style=""> by appointment </a><br />
+		Office hours <a href="https://calendar.app.google/BcUUbyXDAzcw8xCZ7" style="font-size: inherit;" target="_blank">by appointment</a><br />
                 {% if instructor.website %}
                 <a href="{{instructor.website}}" target="_blank"><span class="material-symbols-outlined">
                     public
