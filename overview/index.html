@@ -1,0 +1,732 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://cmu-444.github.io/overview/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+        <link rel="next" href="../syllabus/">
+      
+      
+      <link rel="icon" href="../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>Course Overview - CMU 17-444: Production Machine Learning Systems for Software Engineers</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#course-overview" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="CMU 17-444: Production Machine Learning Systems for Software Engineers" class="md-header__button md-logo" aria-label="CMU 17-444: Production Machine Learning Systems for Software Engineers" data-md-component="logo">
+      
+  <img src="../assets/images/17444_logo_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CMU 17-444: Production Machine Learning Systems for Software Engineers
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Course Overview
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Course Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../syllabus/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Syllabus
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="CMU 17-444: Production Machine Learning Systems for Software Engineers" class="md-nav__button md-logo" aria-label="CMU 17-444: Production Machine Learning Systems for Software Engineers" data-md-component="logo">
+      
+  <img src="../assets/images/17444_logo_white.png" alt="logo">
+
+    </a>
+    CMU 17-444: Production Machine Learning Systems for Software Engineers
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Course Overview
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Overview
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On This Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On This Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#from-prototype-to-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Prototype to Production
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#official-course-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Official Course Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#who-this-course-is-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      Who This Course Is For
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-we-cover" class="md-nav__link">
+    <span class="md-ellipsis">
+      What We Cover
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-learning-experience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Learning Experience
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Course Details
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposed-assessment-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proposed Assessment Structure
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../syllabus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Syllabus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On This Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On This Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#from-prototype-to-production" class="md-nav__link">
+    <span class="md-ellipsis">
+      From Prototype to Production
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#official-course-description" class="md-nav__link">
+    <span class="md-ellipsis">
+      Official Course Description
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#who-this-course-is-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      Who This Course Is For
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-we-cover" class="md-nav__link">
+    <span class="md-ellipsis">
+      What We Cover
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#practical-learning-experience" class="md-nav__link">
+    <span class="md-ellipsis">
+      Practical Learning Experience
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-details" class="md-nav__link">
+    <span class="md-ellipsis">
+      Course Details
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposed-assessment-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Proposed Assessment Structure
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="course-overview">Course Overview<a class="headerlink" href="#course-overview" title="Permanent link">&para;</a></h1>
+<h2 id="from-prototype-to-production">From Prototype to Production<a class="headerlink" href="#from-prototype-to-production" title="Permanent link">&para;</a></h2>
+<p>Plenty of courses teach you to beat a benchmark in a notebook, and plenty more teach you to pitch a demo, hackathon style. But a demo has no real customer, no real deployment, and no real stakes: nobody depends on it, nothing breaks when it fails, and nobody needs to maintain it. This CMU course is about the hard part that comes next: turning that prototype into a <strong>production-grade AI-powered software system</strong> that delivers value to actual customers, that you deploy in the real world, and that keeps running, keeps getting updated, and adapts to changing conditions without going up in flames through security holes, safety incidents, or silent quality collapse.</p>
+<p>You will learn AI engineering end to end, working across <strong>traditional machine learning, large language models, and, increasingly, AI agents that take actions in the real world</strong>: how to build the system around the model, ship it, know whether it actually works, anticipate the ways it will fail, and keep it operating and improving under real load. Along the way, we examine how familiar software engineering practices must adapt when system behavior is probabilistic, depends on data, and evolves over time. Because models make mistakes, and agents act on those mistakes, <strong>managing risk runs through the entire course</strong>, alongside MLOps and responsible AI (safety, security, explainability, fairness). The emphasis is on engineering complete systems that people can depend on.</p>
+<p>This course is adapted from <a href="https://mlip-cmu.github.io/f2026/">Machine Learning in Production</a> (17-445/17-645/17-745) for an audience that is already familiar with software engineering practices. This Spring 2027 offering is designed for students with a software engineering background (e.g., 17-313 or equivalent experience with testing, requirements, architecture, process, and teamwork), some data science and GenAI experience (e.g., has taken a machine learning course, has used sklearn and LLMs), and basic programming skills (e.g., Python programming with libraries, navigating a Unix shell). Rather than introducing software engineering fundamentals, the course builds on them and focuses on what changes when systems depend on learned models, data, and agents.</p>
+<h2 id="official-course-description">Official Course Description<a class="headerlink" href="#official-course-description" title="Permanent link">&para;</a></h2>
+<p>This course prepares software engineers to build and operate production-grade systems powered by machine learning. Assuming prior knowledge of software engineering and basic machine learning, it examines how established engineering practices must adapt to probabilistic, data-dependent, and continuously evolving behavior. Students study the full application lifecycle for systems integrating ML models, large language models, and AI agents. Topics include MLOps practices such as pipeline automation, versioning, reproducibility, deployment, monitoring, and drift detection; harness engineering for increasingly autonomous systems, including orchestration, evaluation, guardrails, permissions, and human oversight; and system-level qualities such as safety, security, privacy, fairness, and explainability.</p>
+<h2 id="who-this-course-is-for">Who This Course Is For<a class="headerlink" href="#who-this-course-is-for" title="Permanent link">&para;</a></h2>
+<p>This course is for students who want to <strong>build and operate AI-powered software systems</strong> that people can depend on. We assume familiarity with core software engineering practices from <strong>17-313 or equivalent experience or coursework</strong>, along with basic machine learning, including training and evaluating a model. Building on that foundation, we explore what it takes to deploy a model, determine whether it works well enough, manage its failures, and operate and improve the system as data and the world change.</p>
+<p>The course is particularly suited to <strong>software engineers who want to build production ML systems and AI agents</strong>, including students interested in roles such as <strong>AI Engineer, ML Engineer, MLOps Engineer,</strong> or <strong>Forward Deployed Engineer</strong>. Students will learn how to adapt familiar engineering practices to systems whose behavior depends on learned models, data, and probabilistic outputs. Through hands-on work, they will gain experience with ML pipelines, deployment, monitoring, behavioral testing, and production infrastructure.</p>
+<p>The course also introduces <strong>harness engineering</strong> for AI agents: the tools, context, execution controls, and evaluation mechanisms that support reliable operation. Students will apply these ideas to an operations agent that uses production monitoring tools to help investigate incidents, with attention to permissions, security, failure recovery, and human oversight.</p>
+<h2 id="what-we-cover">What We Cover<a class="headerlink" href="#what-we-cover" title="Permanent link">&para;</a></h2>
+<p>Building on prior experience or coursework in software engineering and machine learning, we focus on the engineering challenges of building, deploying, and operating production ML systems, with additional emphasis on AI agents and harness engineering.</p>
+<p>We cover topics such as:</p>
+<ul>
+<li><strong>How do we design for wrong predictions a model may make?</strong> How do we anticipate mistakes, assess risks, and assure <em>safety</em> despite possible errors? How do we design the <em>user interface</em> and the entire system to mitigate the consequences of mistakes? Where should we introduce <em>human oversight</em>?</li>
+<li><strong>How do we build and operate reliable AI agents?</strong> How does <em>harness engineering</em> support agents through context management, tool interfaces, and execution control? How do we connect agents to tools and APIs through protocols such as <em>MCP</em>? How do we use <em>tracing</em>, permissions, approval boundaries, and failure recovery to support reliable operation? How do we evaluate and secure an operations agent that helps diagnose production incidents?</li>
+<li><strong>How do we reliably deploy, monitor, and update models in production?</strong> How do <em>MLOps</em> tools support pipeline automation and continuous delivery? How do we manage <em>versioning</em>, <em>provenance</em>, and <em>reproducibility</em> across code, data, and models? How do we monitor system behavior, detect <em>data quality</em> issues and <em>concept drift</em>, and support safe updates and rollback?</li>
+<li><strong>How do we scale production ML systems?</strong> How do we handle growing volumes of training data, telemetry, and prediction requests? How do we use <em>stream processing</em> and production infrastructure to support reliable data ingestion and model serving? How do we balance <em>latency</em>, <em>throughput</em>, resource use, and operating cost?</li>
+<li><strong>How do we test and evaluate production ML systems and agents?</strong> How do we assess <em>model quality</em> beyond aggregate accuracy through data slicing and <em>behavioral testing</em>? How do we test data transformations, model integration, and entire ML pipelines? How do we incorporate these checks into <em>continuous integration</em>? For agents, how do we evaluate tool use, execution trajectories, and responses to tool failures and injected incidents?</li>
+<li><strong>Which qualities matter beyond prediction accuracy?</strong> How do we identify and measure application-specific requirements for <em>latency</em>, <em>cost</em>, <em>scalability</em>, <em>explainability</em>, <em>fairness</em>, and <em>safety</em>? How do we make model predictions and agent actions understandable? How do we recognize <em>feedback loops</em>, address accountability, and resolve conflicts among quality requirements?</li>
+</ul>
+<p><strong>Production-ready tools.</strong> You will gain familiarity with production-quality infrastructure tools. These are likely to include stream processing with Apache Kafka, test automation with GitHub Actions, monitoring and experiment tracking with tools such as Prometheus, Grafana, DVC, and Weights &amp; Biases, and deployment with Docker, Kubernetes, and various MLOps tools. The exact set is still being finalized. Familiarity with these tools has helped many past Machine Learning in Production students in technical interviews.</p>
+<p><strong>Examples and case studies.</strong> We explore real products with commercial potential, going beyond benchmark tasks. For example, instead of object detection in the abstract, we look at how to use it in delivery robots or for image search on a photo-sharing site. Some of these products may be less flashy but have real commercial potential today, such as customer support agents, insurance fraud investigation, content recommendation, meeting minutes generated from recordings, and disease diagnosis.</p>
+<p><strong>An extended team project.</strong> Your team will build, deploy, evaluate, and maintain a robust and scalable movie recommendation service under realistic production conditions, serving one million active users. This is not a toy: your system runs live for several weeks and is graded on how it holds up under real load and changing conditions, as well as on the quality of your engineering decisions and evaluation. You will feel firsthand what breaks when a model meets production, and how to fix it.</p>
+<h2 id="practical-learning-experience">Practical Learning Experience<a class="headerlink" href="#practical-learning-experience" title="Permanent link">&para;</a></h2>
+<p>Through individual assignments, practical labs, case studies, and an extended team project, students will gain experience with:</p>
+<ul>
+<li>Building and evaluating the complete software system around a model.</li>
+<li>Using production infrastructure for automated testing, deployment, monitoring, and experiment tracking.</li>
+<li>Making pipelines and experiments reproducible.</li>
+<li>Identifying failures and responding to changing data and operating conditions.</li>
+<li>Designing safeguards, permissions, and human oversight for increasingly autonomous systems.</li>
+<li>Reasoning about tradeoffs among quality, latency, operating cost, scalability, safety, security, privacy, fairness, and explainability.</li>
+</ul>
+<p>Examples and case studies emphasize real applications with practical and commercial value, going beyond isolated benchmark tasks.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Specific tools and detailed course content are still being planned.</p>
+</div>
+<h2 id="course-details">Course Details<a class="headerlink" href="#course-details" title="Permanent link">&para;</a></h2>
+<ul>
+<li><strong>Course number:</strong> 17-444</li>
+<li><strong>Course title:</strong> Production Machine Learning Systems for Software Engineers</li>
+<li><strong>Units:</strong> 9</li>
+<li><strong>Schedule:</strong> Two sessions per week, usually lectures; recitations every other week.</li>
+<li><strong>Expected background:</strong> Prior knowledge of software engineering and basic machine learning.</li>
+<li><strong>Software engineering preparation:</strong> 17-313, or significant software engineering experience subject to instructor approval.</li>
+<li><strong>Counts toward:</strong> CS elective.</li>
+<li><strong>Additional credit:</strong> Software Engineering Concentration credit to be confirmed.</li>
+<li><strong>Final exam:</strong> None.</li>
+</ul>
+<h2 id="proposed-assessment-structure">Proposed Assessment Structure<a class="headerlink" href="#proposed-assessment-structure" title="Permanent link">&para;</a></h2>
+<div class="admonition warning">
+<p class="admonition-title">Proposed</p>
+<p>The assessment structure below is proposed and may change before the semester begins.</p>
+</div>
+<table>
+<thead>
+<tr>
+<th>Component</th>
+<th style="text-align: right;">Weight</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Individual assignments</td>
+<td style="text-align: right;">35%</td>
+<td>Implementation, evaluation, and written analysis applying course concepts.</td>
+</tr>
+<tr>
+<td>Team project</td>
+<td style="text-align: right;">30%</td>
+<td>Building, deploying, evaluating, and maintaining an AI-powered service through staged milestones.</td>
+</tr>
+<tr>
+<td>Midterms</td>
+<td style="text-align: right;">20%</td>
+<td>Applying course concepts and reasoning through engineering decisions and tradeoffs.</td>
+</tr>
+<tr>
+<td>Labs</td>
+<td style="text-align: right;">10%</td>
+<td>Practical exercises with production AI engineering tools and workflows.</td>
+</tr>
+<tr>
+<td>Participation</td>
+<td style="text-align: right;">5%</td>
+<td>Contributions to discussions and in-class activities.</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td style="text-align: right;"><strong>100%</strong></td>
+<td><strong>No final exam.</strong></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "navigation.top", "navigation.tracking", "navigation.indexes", "announce.dismiss"], "search": "../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
