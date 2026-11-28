@@ -1,0 +1,2886 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://cmu-444.github.io/">
+      
+      
+      
+        <link rel="next" href="overview/">
+      
+      
+      <link rel="icon" href="assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+    
+    
+      
+        <title>CMU 17-444: Production Machine Learning Systems for Software Engineers - CMU 17-444: Production Machine Learning Systems for Software Engineers</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.84d31ad4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+<link rel="stylesheet"
+  href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="stylesheets/custom.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#17-444-production-machine-learning-systems-for-software-engineers" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="CMU 17-444: Production Machine Learning Systems for Software Engineers" class="md-header__button md-logo" aria-label="CMU 17-444: Production Machine Learning Systems for Software Engineers" data-md-component="logo">
+      
+  <img src="assets/images/17444_logo_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CMU 17-444: Production Machine Learning Systems for Software Engineers
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              CMU 17-444: Production Machine Learning Systems for Software Engineers
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="red"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="overview/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Course Overview
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="syllabus/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Syllabus
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="CMU 17-444: Production Machine Learning Systems for Software Engineers" class="md-nav__button md-logo" aria-label="CMU 17-444: Production Machine Learning Systems for Software Engineers" data-md-component="logo">
+      
+  <img src="assets/images/17444_logo_white.png" alt="logo">
+
+    </a>
+    CMU 17-444: Production Machine Learning Systems for Software Engineers
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On This Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On This Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#this-week" class="md-nav__link">
+    <span class="md-ellipsis">
+      This Week
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weekly-schedule-tentative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weekly Schedule (Tentative)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Staff
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Staff">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Course Overview
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="syllabus/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Syllabus
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On This Page">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On This Page
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#this-week" class="md-nav__link">
+    <span class="md-ellipsis">
+      This Week
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#weekly-schedule-tentative" class="md-nav__link">
+    <span class="md-ellipsis">
+      Weekly Schedule (Tentative)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#staff" class="md-nav__link">
+    <span class="md-ellipsis">
+      Staff
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Staff">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#instructor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Instructor
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+  
+
+
+
+
+<h1 id="17-444-production-machine-learning-systems-for-software-engineers">17-444 Production Machine Learning Systems for Software Engineers<a class="headerlink" href="#17-444-production-machine-learning-systems-for-software-engineers" title="Permanent link">&para;</a></h1>
+<p><strong>From Prototype to Production.</strong> <em>You can build an AI demo. Can you build a system people can depend on?</em> See the <a href="overview/">course overview</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Spring 2027 · Under construction</p>
+<p>The course is still being planned. The schedule below is tentative, and the syllabus, assignments, and readings will be posted as they are finalized.</p>
+</div>
+<h2 id="this-week">This Week<a class="headerlink" href="#this-week" title="Permanent link">&para;</a></h2>
+<div id="this-week"><div class="card">
+    <div class="header">
+        Lectures & Readings
+    </div>
+    <div class="content">
+
+            None!
+
+    </div>
+
+</div>
+
+<div class="card">
+    <div class="header">
+        Lab
+    </div>
+    <div class="content">
+
+            None!
+
+    </div>
+
+    <div class="header">
+        Office Hours
+    </div>
+    <div class="content">
+        By appointment. See <a href="#staff">staff</a> below.
+    </div>
+
+</div>
+
+<div class="card">
+    <div class="header">
+        Assignments & Project
+    </div>
+    <div class="content">
+
+            None!
+
+    </div>
+    <div class="header">
+        Team Survey
+    </div>
+    <div class="content">
+
+            None!
+
+    </div>
+
+
+</div>
+
+<div class="card">
+    <div class="header">
+        Problem Sets & Quizzes
+    </div>
+    <div class="content">
+
+            None!
+
+    </div>
+</div>
+
+</div>
+
+<h2 id="weekly-schedule-tentative">Weekly Schedule (Tentative)<a class="headerlink" href="#weekly-schedule-tentative" title="Permanent link">&para;</a></h2>
+<div id="schedule">
+<!-- Loading in schedule from schedule.yaml -->
+<table>
+    <thead>
+        <th><b>Date</b></th>
+        <th><b>Lecture</b></th>
+        <th><b>Pre-lecture Reading</b></th>
+        <th><b>Lab</b></th>
+        <th><b>Problem Sets / Quiz</b></th>
+        <th><b>Assignments &amp; Project</b></th>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td><span class="schedule-day">Sun Jan 10</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Introduction and Motivation</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Jan 11</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Jan 12</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+                    <b>Stream processing: Apache Kafka</b>
+                    <br/>
+
+
+
+
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Jan 13</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Jan 14</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Sun Jan 17</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Correctness and Risk + Requirements</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Jan 18</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Jan 19</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Planning for Mistakes</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+                <td rowspan="1"><span class="schedule-homework">
+
+                    <b>I1: Recommendation Model</b>
+                    <br/>
+
+
+
+                    <a class="label label-red" href="https://github.com/mlip-cmu/f2026/blob/main/assignments/I2_model.md" target="_blank">
+                        <span class="material-symbols-outlined">description</span>Handout
+                    </a>
+
+
+
+                </span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Jan 20</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Jan 21</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Sun Jan 24</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Model Quality</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Jan 25</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Jan 26</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Behavioral Model Testing</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+                <td rowspan="1"><span class="schedule-homework">
+
+                    <b>I2: Risk</b>
+                    <br/>
+
+
+
+                    <a class="label label-red" href="https://github.com/mlip-cmu/f2026/blob/main/assignments/I3_risk.md" target="_blank">
+                        <span class="material-symbols-outlined">description</span>Handout
+                    </a>
+
+
+
+                </span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Jan 27</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Jan 28</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Sun Jan 31</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+                    <b>Model Testing</b>
+                    <br/>
+
+
+
+
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Feb 1</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Feb 2</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Deploying a Model</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Feb 3</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Feb 4</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Sun Feb 7</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Automating and Testing ML Pipelines</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Feb 8</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Feb 9</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>No Class</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Feb 10</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Feb 11</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Sun Feb 14</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+                    <b>Continuous Integration</b>
+                    <br/>
+
+
+
+
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Feb 15</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Feb 16</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Data Quality</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+                <td rowspan="1"><span class="schedule-homework">
+
+                    <b>M1</b>
+                    <br/>
+
+
+
+                    <a class="label label-red" href="https://github.com/mlip-cmu/f2026/blob/main/assignments/project.md" target="_blank">
+                        <span class="material-symbols-outlined">description</span>Handout
+                    </a>
+
+
+
+                </span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Feb 17</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Feb 18</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Sun Feb 21</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Scaling the System</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Feb 22</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Feb 23</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Planning for Operations + Versioning and Provenance</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Feb 24</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Feb 25</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Sun Feb 28</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+                    <b>ML Pipeline Testing</b>
+                    <br/>
+
+
+
+
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Mar 1</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Mar 2</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Exam 1</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Mar 3</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Mar 4</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Sun Mar 7</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>No Class</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Mar 8</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Mar 9</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>No Class</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Mar 10</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Mar 11</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Sun Mar 14</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+                    <b>Monitoring: Prometheus and Grafana</b>
+                    <br/>
+
+
+
+
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Mar 15</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Mar 16</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Safety</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Mar 17</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Mar 18</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Sun Mar 21</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Coding Agents and Agent Harnesses</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Mar 22</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Mar 23</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Agent Evaluation and Reliability</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+                <td rowspan="1"><span class="schedule-homework">
+
+                    <b>M2</b>
+                    <br/>
+
+
+
+                    <a class="label label-red" href="https://github.com/mlip-cmu/f2026/blob/main/assignments/project.md" target="_blank">
+                        <span class="material-symbols-outlined">description</span>Handout
+                    </a>
+
+
+
+                </span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Mar 24</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Mar 25</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Sun Mar 28</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+                    <b>Agents and MCP</b>
+                    <br/>
+
+
+
+
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Mar 29</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Mar 30</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Explainability + Transparency</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Mar 31</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Apr 1</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Sun Apr 4</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>No Class</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Apr 5</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Apr 6</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Operations Agent Integration and Reliability</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Apr 7</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Apr 8</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Sun Apr 11</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Operations Agent Case Study and Evaluation Workshop</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Apr 12</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Apr 13</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Accountability, Fairness, and Feedback Loops</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Apr 14</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Apr 15</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Sun Apr 18</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+                    <b>Operations Agent Evaluation and Security</b>
+                    <br/>
+
+
+
+
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Mon Apr 19</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Tue Apr 20</span></td>
+
+            <td><span class="schedule-lecture">
+
+                    <b>Exam 2</b>
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Wed Apr 21</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+        <tr>
+            <td><span class="schedule-day">Thu Apr 22</span></td>
+
+            <td><span class="schedule-lecture">
+
+            </span></td>
+
+            <td><span class="schedule-reading">
+
+            </span></td>
+
+            <td><span class="schedule-recitation">
+
+            </span></td>
+
+
+
+
+                    <td><span class="schedule-problemset"></span></td>
+
+
+
+                    <td><span class="schedule-homework"></span></td>
+
+
+        </tr>
+
+    </tbody>
+
+</table>
+</div>
+<h2 id="staff">Staff<a class="headerlink" href="#staff" title="Permanent link">&para;</a></h2>
+<h3 id="instructor">Instructor<a class="headerlink" href="#instructor" title="Permanent link">&para;</a></h3>
+<div id="course-instructors">
+<div class="staffer card">
+    <div class="container">
+        <img class="staffer-image" src="assets/images/efeoflus.jpg" alt="">
+        <div>
+            <h3 class="staffer-name">
+                Eduardo Feo-Flushing
+            </h3>
+            <div class="staffer-links">
+                <a href="mailto:efeoflus@andrew.cmu.edu"><span class="material-symbols-outlined">
+                    mail
+                </span></a><br />
+        Office hours <a href="https://calendar.app.google/BcUUbyXDAzcw8xCZ7" style="font-size: inherit;" target="_blank">by appointment</a><br />
+
+                <a href="https://efeoflushing.com/" target="_blank"><span class="material-symbols-outlined">
+                    public
+                </span></a>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+<footer class="md-footer">
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["navigation.tabs", "navigation.top", "navigation.tracking", "navigation.indexes", "announce.dismiss"], "search": "assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="assets/javascripts/bundle.f55a23d4.min.js"></script>
+      
+    
+  </body>
+</html>
